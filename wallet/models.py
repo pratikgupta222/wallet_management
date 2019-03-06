@@ -1,10 +1,6 @@
-from django.db import models
-
 # Create your models here.
 from django.utils.translation import ugettext_lazy as _
 from django.db import models
-from django.conf import settings
-from django.utils import timezone
 
 from users.models import User
 
