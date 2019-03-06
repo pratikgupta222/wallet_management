@@ -2,6 +2,21 @@
 # https://github.com/damnever/pigar
 
 # manage.py: 8
+# transaction/admin.py: 1
+# transaction/apps.py: 1
+# transaction/models.py: 1
+# transaction/tests.py: 1
+# transaction/views.py: 1
+# users/admin.py: 1
+# users/apps.py: 1
+# users/models.py: 1
+# users/tests.py: 1
+# users/views.py: 1
+# wallet/admin.py: 1
+# wallet/apps.py: 1
+# wallet/models.py: 1
+# wallet/tests.py: 1
+# wallet/views.py: 1
 # wallet_management/urls.py: 16,17
 # wallet_management/wsgi.py: 12
 Django == 2.1.7

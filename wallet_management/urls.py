@@ -14,8 +14,29 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
+# from rest_framework.documentation import include_docs_urls
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('api-auth/', include('rest_framework.urls')),
+    # path('docs/', include_docs_urls(title='Waalet API', description='RESTful API for Wallet Management')),
+    path('', include(('users.urls', 'users'), namespace='users')),
+    path('', include(('wallet.urls', 'wallet'), namespace='wallet')),
 ]
+
+# from django.conf.urls import url, include
+# from django.contrib import admin
+# from rest_framework.documentation import include_docs_urls
+#
+# from auth_api import views
+#
+# urlpatterns = [
+#     url(r'^admin/', admin.site.urls),
+#
+#
+#     url(r'^$', views.api_root),']).values(order_const.INNER_ORDER_RESPONSE_VALUES_KEY)
+
+#     url(r'^', include('users.urls', namespace='users')),
+#     url(r'^', include('todos.urls', namespace='todos')),
+# ]
